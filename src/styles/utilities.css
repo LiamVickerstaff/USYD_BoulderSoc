@@ -1,5 +1,10 @@
 .flex-space-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.gap-50 {
+  gap: 50px;
+}
+
