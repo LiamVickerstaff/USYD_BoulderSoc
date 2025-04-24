@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+  --primary: #9cc450;
+  --White: rgba(255, 255, 255, 1);
+  --Black: rgba(0, 0, 0, 1);
+  
+  /* Font families */
+  --font-family: "Plus Jakarta Sans", sans-serif;
+
+  /* Buttons */
+  --btn-border: 1px solid rgba(62, 78, 38, 0.16);
+  --btn-border-radius: 8px;
+
+}
