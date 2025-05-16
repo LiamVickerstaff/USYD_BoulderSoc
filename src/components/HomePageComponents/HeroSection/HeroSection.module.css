@@ -1,0 +1,43 @@
+.HeroSectionContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.BoulderSocIcon {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.IconBG {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -45%);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 380px;
+  height: 330px;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 5%;
+}
+
+.FadeIn {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,9 @@
+.svg {
+  position: absolute;
+  top: 2200px;
+  left: -40px;
+  width: 110vw;
+  height: 720px;
+  z-index: -1;
+  transform: rotate(-2deg);
+}

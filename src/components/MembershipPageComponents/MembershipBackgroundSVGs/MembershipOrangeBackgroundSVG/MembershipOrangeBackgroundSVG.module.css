@@ -1,0 +1,7 @@
+.svg {
+  position: absolute;
+  top: 790px;
+  width: 100vw;
+  height: 700px;
+  z-index: -1;
+}

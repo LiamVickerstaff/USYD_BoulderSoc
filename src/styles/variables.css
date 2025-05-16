@@ -1,15 +1,24 @@
 :root {
   /* Colors */
-  --primary: #9cc450;
+  --primary: rgba(156, 196, 80, 1);
   --White: rgba(255, 255, 255, 1);
   --Black: rgba(0, 0, 0, 1);
+  --Gray: #efefef;
+  --Border-Green: #3e4e26;
 
   /* Font families */
   --font-family: "Plus Jakarta Sans", sans-serif;
 
   /* Text sizes */
+  --header-size: 40px;
+  --subheader-size: 24px;
+  --paragraph-size: 20px;
   --nav-item-size: 22px;
-  --join-today-btn-size: 28px;
+
+  /* Font Weights */
+  --font-weight-header: 600;
+  --font-weight-subheading: 500;
+  --font-weight-paragraph: 300;
 
   /* Buttons */
   --btn-border: 1px solid rgba(62, 78, 38, 0.16);
@@ -17,4 +26,7 @@
 
   /* Radius */
   --Corner-Small: 8px;
+
+  /* Margins */
+  --wide-screen-margin: 250px;
 }

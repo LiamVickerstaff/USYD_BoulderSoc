@@ -1,0 +1,75 @@
+.SocietyActivitesSectionContainer {
+  position: relative;
+  margin-top: 70px;
+}
+
+.contentContainer {
+  position: relative;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.clubActivitesContainer {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--White);
+  border-radius: 24px;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+  padding: 40px 40px 30px 40px;
+}
+
+.clubActivitesTextContainer {
+  width: 100%;
+  max-width: 700px;
+  flex-shrink: 0;
+}
+
+.greenBGCurved {
+  position: absolute;
+  width: 100vw;
+  z-index: 0;
+  top: -55px;
+  left: -16.7%;
+}
+
+.imageContainer {
+  width: 588px;
+  height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagramLink {
+  position: relative;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.instagramLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary);
+  transition: bottom 0.2s ease-in-out;
+}
+
+.instagramLink:hover::after {
+  bottom: -3px;
+}

@@ -1,0 +1,17 @@
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pageCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.maxWidth1440 {
+  max-width: 1440px;
+  margin: 0 20px;
+  width: 100%;
+}
