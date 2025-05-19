@@ -1,6 +1,6 @@
 .HeroSectionContainer {
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   position: relative;
 }
 
@@ -43,21 +43,14 @@
   }
 }
 
-@media (min-width: 768px) {
-  .BoulderSocIcon {
-    width: 300px;
-  }
-
-  .IconBG {
-    width: 380px;
-    height: 330px;
-  }
-}
-
-@media (max-height: 479px) {
+@media (max-height: 479px){
   .BoulderSocIcon {
     width: 200px;
     top: 55%;
+  }
+
+  .HeroSectionContainer {
+    height: 100vh;
   }
 
   .IconBG {
@@ -88,5 +81,28 @@
   .IconBG {
     width: 380px;
     height: 330px;
+  }
+}
+
+@media (min-width: 480px) {
+  .HeroSectionContainer {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .BoulderSocIcon {
+    width: 300px;
+  }
+
+  .IconBG {
+    width: 380px;
+    height: 330px;
+  }
+}
+
+@media (min-width: 830px) {
+  .HeroSectionContainer {
+    height: 100vh;
   }
 }

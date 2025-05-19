@@ -34,7 +34,7 @@
 .burgerMenu {
   list-style: none;
   background-color: var(--White);
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 0;
   right: 0;
