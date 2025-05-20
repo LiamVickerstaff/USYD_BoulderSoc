@@ -1,7 +1,7 @@
 .carouselContainer {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -13,20 +13,30 @@
   object-fit: cover;
 }
 
-@media (min-width: 480px) {
+/* Landscape Responsive Sizings */
+
+@media (min-width: 480px) and (orientation: landscape) {
+   .carouselContainer {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+   .carouselContainer {
+    height: 100vh;
+  }
+}
+
+/* Portrait Responsive Sizings */
+
+@media (min-height: 480px) and (orientation: portrait) {
   .carouselContainer {
     height: 70vh;
   }
 }
 
-@media (min-width: 830px) {
+@media (min-height: 680px) and (orientation: portrait) {
   .carouselContainer {
-    height: 100vh;
-  }
-}
-
-@media (max-height: 479px) {
-  .carouselContainer {
-    height: 100vh;
+    height: 60vh;
   }
 }

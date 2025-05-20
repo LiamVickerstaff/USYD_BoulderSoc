@@ -90,9 +90,9 @@
   bottom: -3px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1280px) {
   .SocietyActivitesSectionContainer {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   .clubActivitesContainer {

@@ -1,12 +1,12 @@
 .HeroSectionContainer {
   width: 100vw;
-  height: 60vh;
+  height: 80vh;
   position: relative;
 }
 
 .BoulderSocIcon {
-  width: 240px;
-  top: 50%;
+  width: 150px;
+  top: 55%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -15,8 +15,8 @@
 .IconBG {
   position: absolute;
   top: 55%;
-  width: 260px;
-  height: 230px;
+  width: 200px;
+  height: 170px;
 
   left: 50%;
   transform-origin: center;
@@ -43,10 +43,31 @@
   }
 }
 
-@media (max-height: 479px){
+/* Landscape Reponsive Sizings */
+
+@media (min-width: 480px) and (orientation: landscape) {
+  .HeroSectionContainer {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 830px) and (orientation: landscape) {
+  .BoulderSocIcon {
+    width: 180px;
+    top: 54%;
+  }
+
+  .IconBG {
+    width: 230px;
+    height: 210px;
+    top: 53%;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
   .BoulderSocIcon {
     width: 200px;
-    top: 55%;
+    top: 54%;
   }
 
   .HeroSectionContainer {
@@ -54,55 +75,44 @@
   }
 
   .IconBG {
-    width: 260px;
+    width: 250px;
     height: 230px;
     top: 53%;
   }
 }
 
-@media (min-height: 480px) {
-  .BoulderSocIcon {
-    width: 220px;
-    top: 51%;
-  }
+/* Portrait Responsive Sizings */
 
-  .IconBG {
-    width: 300px;
-    height: 270px;
-    top: 50%;
-  }
-}
-
-@media (min-height: 600px) and (min-width: 580px) {
-  .BoulderSocIcon {
-    width: 300px;
-  }
-
-  .IconBG {
-    width: 380px;
-    height: 330px;
-  }
-}
-
-@media (min-width: 480px) {
+@media (min-height: 480px) and (orientation: portrait) {
   .HeroSectionContainer {
     height: 70vh;
   }
-}
 
-@media (min-width: 768px) {
   .BoulderSocIcon {
-    width: 300px;
+    width: 150px;
+    top: 52%;
   }
 
   .IconBG {
-    width: 380px;
-    height: 330px;
+    width: 200px;
+    height: 170px;
+    top: 51%;
   }
 }
 
-@media (min-width: 830px) {
+@media (min-height: 680px) and (orientation: portrait) {
+  .BoulderSocIcon {
+    width: 170px;
+    top: 53%;
+  }
+
   .HeroSectionContainer {
-    height: 100vh;
+    height: 60vh;
+  }
+
+  .IconBG {
+    width: 220px;
+    height: 190px;
+    top: 52%;
   }
 }
