@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function MembershipBenefitSection() {
   return (
     <div className={styles.sectionContainer}>
-      <h2 className="sectionTitle">Unmissable Membership Benefits</h2>
+      <h2 className={styles.sectionTitle}>Unmissable Membership Benefits</h2>
       <div className={styles.membershipCardGroupContainer}>
         <GymEntreesCard />
         <StoreDiscountsCard />
@@ -16,7 +16,7 @@ export default function MembershipBenefitSection() {
       </div>
       <Link to="/membership" className={styles.linkToMembershipPage}>
         Check out our full list of benefits{" "}
-        <FaArrowRight size={20} color="#000" className={styles.arrow}/>
+        <FaArrowRight size={20} color="#000" className={styles.arrow} />
       </Link>
     </div>
   );

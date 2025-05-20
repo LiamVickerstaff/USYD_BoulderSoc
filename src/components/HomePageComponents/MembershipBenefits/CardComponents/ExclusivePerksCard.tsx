@@ -1,6 +1,6 @@
-import MembershipCardContainer from "../MembershipCardContainer";
+import MembershipCardContainer from "./CardContainer/MembershipCardContainer";
 import ExclusivePerksBG from "/SVGs/Exclusive_Perks_BG.svg";
-import styles from "../MembershipBenefits.module.css";
+import styles from "./MembershipCards.module.css";
 
 export default function ExclusivePerksCard() {
   const title = "Exclusive Perks";

@@ -5,7 +5,7 @@ import GroupPhoto_1 from "/Images/GroupPhoto_01.jpg";
 export default function BecomeAMemberSection() {
   return (
     <div className={styles.BecomeAMemberContainer}>
-      <h2 className="sectionTitle">Become A Member Today!</h2>
+      <h2 className={styles.sectionTitle}>Become A Member Today!</h2>
       <div className={styles.PricingContainer}>
         <div className={styles.imageContainer}>
           <img

@@ -7,134 +7,25 @@
 
 .membershipCardGroupContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  gap: 84px;
+  gap: clamp(20px, 5vw, 84px);
   align-self: stretch;
 }
 
-.membershipCardContainer {
-  position: relative;
-  overflow: hidden;
-  width: 348px;
-  height: 468px;
-  border-radius: 16px;
-  background: var(--White, #fff);
-  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
-}
-
-.ulFlex {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  width: 100%;
-  gap: 1.5em;
-  position: absolute;
-  top: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.customBullet {
-  list-style: none;
-  position: relative;
-  padding-left: 2rem;
-  color: var(--Black, #000);
+.sectionTitle {
+  color: #000;
+  text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Plus Jakarta Sans";
-  font-size: 20px;
+  font-size: 28px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 126%;
-  list-style: none;
-}
-
-.customBullet::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.2em;
-  width: 1em;
-  height: 1em;
-  background-image: url("SVGs/Bouldersoc_logo_black.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.textWrapper {
-  font-size: 32px;
   font-weight: 600;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  z-index: 1;
-  text-shadow: 2px 2px 2px #3e4e26;
+  line-height: 126%;
   text-transform: capitalize;
-  letter-spacing: 0.1rem;
-}
-
-.logosContainer {
-  width: 100%;
-  position: absolute;
-  bottom: 120px;
-}
-
-.logoGroup {
-  position: relative;
-}
-
-.logo {
-  position: absolute;
-}
-
-.NineDegrees {
-  width: 140px;
-  left: -30px;
-  transform: rotate(-12deg);
-}
-
-.SydneyIndoor {
-  width: 120px;
-  top: -15px;
-  left: 60px;
-}
-
-.Blochaus {
-  width: 110px;
-  top: 15px;
-  right: 95px;
-  transform: rotate(9deg);
-}
-
-.Nomad {
-  width: 120px;
-  right: -15px;
-  top: 0px;
-  transform: rotate(-25deg);
-}
-
-.GoodGrip {
-  left: -16px;
-  top: 5px;
-  transform: rotate(-15deg);
-}
-
-.ClimbingAnchors {
-  width: 140px;
-  height: 110px;
-  top: 10px;
-  left: 100px;
-  transform: rotate(5deg);
-}
-
-.NomadStore {
-  width: 130px;
-  right: -15px;
-  top: 0px;
-  transform: rotate(15deg);
+  margin-bottom: 30px;
 }
 
 .linkToMembershipPage {
@@ -176,58 +67,18 @@
   margin-top: 2px;
 }
 
-.imagesGroup {
-  position: relative;
+@media (min-width: 640px) {
+  .sectionTitle {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
 }
 
-.image {
-  width: 120px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 3px solid var(--primary);
-  position: absolute;
-  bottom: 0;
-  object-fit: cover;
-}
-
-.BoulderBash {
-  width: 120px;
-  height: 100px;
-  bottom: -10px;
-  left: -5px;
-  transform: rotate(10deg);
-  z-index: 10;
-}
-
-.SocialClimb {
-  left: 50px;
-  bottom: 75px;
-  transform: rotate(-10deg);
-  z-index: 2;
-}
-
-.OutdoorClimbing {
-  width: 140px;
-  right: 100px;
-  bottom: -5px;
-  z-index: 4;
-}
-
-.Sendfest {
-  right: 40px;
-  bottom: 80px;
-  width: 140px;
-  transform: rotate(5deg);
-}
-
-.Roadtrip {
-  width: 115px;
-  height: auto;
-  transform: rotate(-10deg);
-  bottom: -15px;
-  right: -5px;
-  z-index: 5;
-  object-position: center bottom;
-  /* border: 3px solid rgb(192, 194, 49); */
+@media (min-width: 840px) {
+  .sectionTitle {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
 }

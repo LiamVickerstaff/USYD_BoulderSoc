@@ -6,15 +6,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 70px;
-  column-gap: 1em;
+  column-gap: 0.8em;
   row-gap: 1em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .studentPriceBoxContainer {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 170px;
   border-radius: 4px;
   background: var(--White, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -34,8 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 140px;
-  font-size: 60px;
+  height: 60px;
+  font-size: 30px;
   padding-top: 16px;
   padding-bottom: 24px;
   position: relative;
@@ -43,13 +43,13 @@
 
 .subtitle {
   color: var(--Black);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .subtitleBox {
   grid-column: span 2;
-  height: 60px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,7 @@
 .textWrapperText {
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .textStroke {
@@ -92,10 +92,121 @@
   border-radius: var(--btn-border-radius);
   box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.26);
   font-family: var(--font-family);
-  font-size: 48px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   text-decoration: none;
   text-shadow: 0px 2px 2px #3e4e26;
   padding: 8px 12px;
+}
+
+@media (min-width: 480px) {
+  .studentPriceBoxContainer {
+    width: 210px;
+  }
+
+  .textWrapperText {
+    font-size: 20px;
+  }
+
+  .priceBox {
+    font-size: 40px;
+    height: 80px;
+  }
+
+  .joinNowBtn {
+    font-size: 36px;
+  }
+
+  .subtitleBox {
+    height: 50px;
+  }
+}
+
+@media (min-width: 640px) {
+  .studentPriceBoxContainer {
+    width: 270px;
+  }
+
+  .textWrapperText {
+    font-size: 20px;
+  }
+
+  .priceBox {
+    font-size: 40px;
+    height: 80px;
+  }
+
+  .joinNowBtn {
+    font-size: 36px;
+  }
+
+  .subtitleBox {
+    height: 50px;
+  }
+
+  .gridContainer {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .studentPriceBoxContainer {
+    width: 220px;
+  }
+
+  .textWrapperText {
+    font-size: 20px;
+  }
+
+  .priceBox {
+    font-size: 48px;
+    height: 110px;
+  }
+
+  .joinNowBtn {
+    font-size: 36px;
+  }
+
+  .subtitleBox {
+    height: 50px;
+  }
+
+  .gridContainer {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .studentPriceBoxContainer {
+    width: 260px;
+  }
+
+  .textWrapperText {
+    font-size: 24px;
+  }
+
+  .priceBox {
+    font-size: 60px;
+    height: 120px;
+  }
+
+  .joinNowBtn {
+    font-size: 48px;
+  }
+
+  .subtitleBox {
+    height: 60px;
+  }
+
+  .gridContainer {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .imageContainer {
+    width: 580px;
+    height: 420px;
+  }
 }

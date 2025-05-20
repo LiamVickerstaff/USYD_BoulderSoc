@@ -1,0 +1,23 @@
+.membershipCardContainer {
+  position: relative;
+  overflow: hidden;
+  width: 348px;
+  height: 468px;
+  border-radius: 16px;
+  background: var(--White, #fff);
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.textWrapper {
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  text-shadow: 2px 2px 2px #3e4e26;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}

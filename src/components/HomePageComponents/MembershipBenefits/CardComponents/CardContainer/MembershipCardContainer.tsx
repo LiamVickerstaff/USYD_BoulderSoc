@@ -1,4 +1,4 @@
-import styles from "./MembershipBenefits.module.css";
+import styles from "./MembershipCardContainer.module.css";
 
 export default function MembershipCardContainer({
   title,

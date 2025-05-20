@@ -1,9 +1,29 @@
 .svg {
   position: absolute;
-  top: 1760px;
+  top: 3100px;
   left: -40px;
   width: 110vw;
   height: 600px;
   z-index: -1;
   transform: rotate(1deg);
+}
+
+@media (min-width: 800px) {
+  .svg {
+    top: 2900px;
+  }
+}
+
+
+@media (min-width: 1232px) {
+  .svg {
+    top: 2640px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .svg {
+    top: 1760px;
+  }
 }
