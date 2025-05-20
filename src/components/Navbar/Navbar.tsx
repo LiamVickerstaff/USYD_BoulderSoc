@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import BoulderSocIcon from "/SVGs/BoulderSoc_Icon.svg";
+// import BoulderSocIcon from "/SVGs/BoulderSoc_Icon.svg";
+import BoulderSocIconSmall from "/SVGs/BoulderSoc_Logo_white_small.svg"
 import styles from "./Navbar.module.css";
 import JoinTodayBtn from "../Buttons/JoinTodayBtn";
 import { useEffect, useState } from "react";
@@ -33,7 +34,7 @@ export default function Navbar() {
         <div className={styles.content}>
           <Link to="/" onClick={() => handleClick("")}>
             <img
-              src={BoulderSocIcon}
+              src={BoulderSocIconSmall}
               className={styles.logo}
               alt="BoulderSoc Logo"
             />
