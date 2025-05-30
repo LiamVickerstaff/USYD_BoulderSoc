@@ -8,20 +8,20 @@
 
 .maxWidthContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 
 .instagramWrapper {
-  width: 700px; /* Or a fixed width like 800px */
+  width: 350px;
   max-width: 900px;
-  height: auto; /* Adjust height as needed */
-  overflow: hidden; /* Optional */
-  /* border: 1px solid black; */
+  height: auto;
+  overflow: hidden;
   border-radius: 16px;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .instagramWrapper > div {
@@ -38,8 +38,8 @@
 .FacebookEmbed {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 110px);
+  grid-template-rows: repeat(3, 110px);
   gap: 0.5em;
 }
 
@@ -48,4 +48,97 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(220, 220, 220);
+}
+
+@media (min-width: 480px) {
+  .maxWidthContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .instagramWrapper {
+    width: 400px;
+    max-width: 900px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 0 20px;
+  }
+
+  .FacebookEmbed {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 0.5em;
+  }
+}
+
+@media (min-width: 880px) {
+  .maxWidthContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .instagramWrapper {
+    width: 400px;
+    max-width: 900px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 0 20px;
+  }
+
+  .FacebookEmbed {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 0.5em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .instagramWrapper {
+    width: 500px;
+    max-width: 900px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 0 20px;
+  }
+
+  .FacebookEmbed {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 0.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .instagramWrapper {
+    width: 700px;
+    max-width: 900px;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .FacebookEmbed {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 0.5em;
+  }
 }

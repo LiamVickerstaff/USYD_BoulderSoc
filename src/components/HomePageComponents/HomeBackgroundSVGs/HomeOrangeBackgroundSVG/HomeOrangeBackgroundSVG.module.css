@@ -14,13 +14,11 @@
   }
 }
 
-
 @media (min-width: 1232px) {
   .svg {
     top: 2640px;
   }
 }
-
 
 @media (min-width: 1280px) {
   .svg {

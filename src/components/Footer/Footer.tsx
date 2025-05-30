@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.content}>
-        <p className={`${styles.footerSection} ${styles.designBy}`}>
+        <p className={`${styles.footerSectionItems} ${styles.designBy}`}>
           <i>
             {" "}
             Website And Design <br /> By Liam Vickerstaff
@@ -15,22 +15,21 @@ export default function Footer() {
         </p>
         <img
           src={BoulderSocIcon}
-          width={90}
           alt="BoulderSoc Logo"
-          className={`${styles.footerSection} ${styles.boulderSocIcon}`}
+          className={`${styles.footerSectionItems} ${styles.boulderSocIcon}`}
         />
-        <div className={`${styles.footerSection} ${styles.iconsAndBtn}`}>
+        <div className={`${styles.footerSectionItems} ${styles.iconsAndBtn}`}>
           <a
             href="https://www.facebook.com/usydbouldersoc/"
             className={styles.FacebookLink}
           >
-            <FaFacebookF size={32} color="#fff" />
+            <FaFacebookF color="#fff" className={styles.FacebookIcon} />
           </a>
           <a
             href="https://www.instagram.com/usydboulderingsoc"
             className={styles.instagramLink}
           >
-            <FaInstagram size={36} color="#fff" />
+            <FaInstagram color="#fff" className={styles.InstagramIcon} />
           </a>
           <BecomeAMemberBtn />
         </div>

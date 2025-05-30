@@ -9,7 +9,7 @@ import SydneyIndoorLogo from "/SVGs/Sydney_Indoor_Climbing_Gym_Logo.svg";
 export default function PartnersSection() {
   return (
     <div className={styles.PartnersContainer}>
-      <h2 className={`sectionTitle`}>Special Thanks To All Our Partners</h2>
+      <h2 className={styles.sectionTitle}>Special Thanks To All Our Partners</h2>
       <div className={styles.logosContainer}>
         <div className={styles.logoGroup}>
           <a href="https://www.nomadbouldering.com.au/">

@@ -3,7 +3,7 @@ import styles from "./OurSocietySection.module.css";
 export default function OurSocietySection() {
   return (
     <div className={`${styles.OurSocietyContainer}`}>
-      <h2 className={`sectionTitle`}>Our Society</h2>
+      <h2 className={styles.sectionTitle}>Our Society</h2>
       <p className={`paragraph ${styles.textBox}`}>
         At USYD BoulderSoc, we’re all about making climbing welcoming, fun, and
         accessible for everyone — whether you're brand new to the sport or

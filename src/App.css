@@ -19,5 +19,5 @@ body::-webkit-scrollbar {
 
 .main-container {
   margin: 0 auto;
+  overflow-x: hidden;
 }
-

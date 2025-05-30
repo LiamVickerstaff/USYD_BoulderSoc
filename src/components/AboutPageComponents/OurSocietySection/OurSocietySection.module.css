@@ -8,7 +8,37 @@
   margin-bottom: 100px;
 }
 
+.sectionTitle {
+  color: #000;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126%;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
 .textBox {
   width: 100%;
+  padding-inline: 40px;
   max-width: 1000px;
+}
+
+@media (min-width: 640px) {
+  .textBox {
+    padding-inline: 80px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+
+  .textBox {
+    padding-inline: 0px;
+  }
 }

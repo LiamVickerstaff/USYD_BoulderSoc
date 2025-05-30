@@ -2,43 +2,40 @@
   display: flex;
   align-items: center;
   background-color: var(--Gray);
-  height: 90px;
-  position: relative;
-  padding: 4px 20px;
 }
 
 .content {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 12px 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-
-.footerSection {
-  flex: 1;
-  text-align: center;
+  gap: 1rem;
 }
 
 .designBy {
   font-size: 16px;
   font-weight: 300;
   text-align: start;
+  display: flex;
+  order: 3;
 }
 
 .boulderSocIcon {
-  height: 90px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 120px;
+  height: auto;
+  position: relative;
+  order: 1;
 }
 
 .iconsAndBtn {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  order: 2;
+  justify-items: center;
+  row-gap: 0.7rem;
 }
 
 .instagramLink {
@@ -59,6 +56,18 @@
   border-radius: 50%;
   padding: 8px;
   background: #1877f2;
+}
+
+.InstagramIcon {
+  width: 36px;
+  height: auto;
+  grid-row: 2;
+}
+
+.FacebookIcon {
+  width: 32px;
+  height: auto;
+  grid-row: 2;
 }
 
 .textWrapperText {
@@ -100,4 +109,148 @@
   text-decoration: none;
   text-shadow: 0px 2px 2px #3e4e26;
   padding: 8px 12px;
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+@media (min-width: 480px) {
+  .iconsAndBtn {
+    display: flex;
+    align-items: center;
+    gap: 1.4em;
+    order: 2;
+  }
+
+  .InstagramIcon {
+    width: 30px;
+    height: auto;
+  }
+
+  .FacebookIcon {
+    width: 26px;
+    height: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--Gray);
+  }
+
+  .content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 12px 40px;
+    display: grid;
+    grid-template-areas: "boulderSocIcon iconsAndBtn" "boulderSocIcon designBy";
+    grid-template-columns: 1fr 1.8fr;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .designBy {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    grid-area: designBy;
+    justify-self: start;
+  }
+
+  .boulderSocIcon {
+    width: 120px;
+    height: auto;
+    position: relative;
+    grid-area: boulderSocIcon;
+    justify-self: center;
+  }
+
+  .iconsAndBtn {
+    display: flex;
+    align-items: center;
+    gap: 1.4em;
+    grid-area: iconsAndBtn;
+  }
+}
+
+@media (min-width: 740px) {
+  .content {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footerContainer {
+    height: 80px;
+    padding: 4px 20px;
+  }
+
+  .boulderSocIcon {
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    transform: translateX(-50%);
+  }
+
+  .iconsAndBtn {
+    display: flex;
+    justify-content: end;
+  }
+
+  .footerSectionItems {
+    flex: 1;
+    text-align: center;
+  }
+
+  .designBy {
+    justify-content: space-around;
+    order: 1;
+  }
+}
+
+@media (min-width: 1080px) {
+  .iconsAndBtn {
+    gap: 1.8em;
+  }
+
+  .designBy {
+    justify-content: start;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .boulderSocIcon {
+    width: 90px;
+  }
+
+  .footerContainer {
+    height: 90px;
+  }
+
+  .InstagramIcon {
+    width: 34px;
+    height: auto;
+  }
+
+  .FacebookIcon {
+    width: 30px;
+    height: auto;
+  }
+
+  .iconsAndBtn {
+    gap: 2em;
+  }
 }
